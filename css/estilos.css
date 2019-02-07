@@ -1,0 +1,116 @@
+html,body{
+  margin:0;
+  padding:0;
+  background-color: black;
+  font-family:'Dancing Script';
+  color: white;
+  text-align: center;
+}
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  }
+.contenedor{
+    width: 900px;
+    margin:auto;
+    border-radius: 25px;
+    animation: slidein 3s;
+  }
+
+header a,header a:visited, header a:link{
+  color:white;
+}
+header a:hover{
+  color: #A8CDBA;
+}
+.titulo,.menu{
+  margin: auto;
+}
+.titulo{
+  margin-right: 15vw;
+}
+.menu{
+  margin-left: 15vw
+}
+.centrada{
+  width: 55%;
+  filter: drop-shadow(#82c3a6);
+}
+.primero{
+  background-color: #82c3a6;
+}
+.segundo{
+  background-color: #d5c75f;
+  display: flex;
+  flex-direction: row;
+}
+.acompanada{
+  width: 70%;
+  filter: drop-shadow(#82c3a6);
+  border: 2px solid;
+}
+.dos:hover{
+  transform: rotate(10deg);
+}
+.tres:hover{
+  transform: translate(20px, -5px);
+}
+div[class*="columna"]{
+  display: flex;
+  flex-direction: column;
+  padding-left:8%;
+  color: black;
+}
+footer{
+  background-color: #C6d5c5;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0px 0px 9px 9px;
+  text-align: center;
+}
+footer img{
+  width: 10%;
+}
+@media (max-width:600px) {
+  .contenedor{
+    width: 100%;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu{
+    padding-bottom: 20px;
+  }
+  .primero,.segundo{
+    flex-direction: column;
+  }
+  .primero img{
+    padding: 50px 0 0 0;
+  }
+  .segundo img{
+    padding: 0 0 50px 0;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+  div[class*="columna"]{
+    padding-left: 10%;
+    padding-bottom: 5%;
+  }
+}
+@keyframes slidein {
+  0%{
+    margin-top:150%;
+  }
+  60%{
+    margin-top:-5%;
+  }
+  100%{
+    margin-top:0%;
+  }
+}
